@@ -1,5 +1,5 @@
 <?php
-
+session_start(); // Démarre la session
 use Controller\Mail;
 
 require 'vendor/autoload.php';
@@ -13,9 +13,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   ) {
     $mail = new Mail($_POST['email'], $_POST['nom'], $_POST['objet'], $_POST['message']);
     $resp = $mail->send();
+    $_SESSION['mail_status'] = $resp ? 'success' : 'error'; // Enregistrer le résultat dans $_SESSION
+    $_SESSION['mail_message'] = $resp ? 'Votre message a bien été envoyé' : 'Une erreur est survenue, veuillez réessayer.';
 
     $class = $resp ? 'succes':'danger';
     $info = $resp ? 'Mail envoyé avec succes':'Mail non envoyé !!';
+
+    // Redirection avec un message de confirmation via SweetAlert
+    // echo "<script>
+    //         Swal.fire({
+    //             title: '" . ($resp ? "Succès" : "Erreur") . "',
+    //             text: '" . $info . "',
+    //             icon: '" . ($resp ? "success" : "error") . "',
+    //             confirmButtonText: 'OK'
+    //         });
+    //       </script>";
 
     // Redirection pour éviter la soumission du formulaire lors du rafraîchissement de la page
     header("Location: " . $_SERVER['REQUEST_URI']);
@@ -68,6 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <!-- SweetAlert2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -915,6 +931,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       </div>
                   <?php endif; ?>
               </div>
+
               
               <div class="text-center"><button type="submit">Envoyer</button></div>
             </form>
@@ -967,6 +984,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.1/dist/sweetalert2.min.js"></script>
+
+
+  <script>
+        // Affichage de SweetAlert après la redirection
+        <?php if (isset($_SESSION['mail_status'])): ?>
+            Swal.fire({
+                title: '<?php echo ($_SESSION['mail_status'] == 'success' ? 'Merci' : 'Erreur'); ?>',
+                text: '<?php echo $_SESSION['mail_message']; ?>',
+                icon: '<?php echo ($_SESSION['mail_status'] == 'success' ? 'success' : 'error'); ?>',
+                confirmButtonText: 'OK'
+            });
+            // Effacer les messages de session après affichage
+            <?php unset($_SESSION['mail_status']); unset($_SESSION['mail_message']); ?>
+        <?php endif; ?>
+    </script>
 
 </body>
 

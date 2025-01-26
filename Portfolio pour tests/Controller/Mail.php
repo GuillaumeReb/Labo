@@ -25,6 +25,8 @@ class Mail
         $mail->Port = 465;
         //$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
+        $mail->CharSet = 'UTF-8';
+
         //Recipients
         $mail->setFrom('contact@guillaume-rebourgeon.fr', 'Formulaire');
         $mail->addAddress('guillaume.rebourgeon@hotmail.fr', 'Guillaume');     //Add a recipient
@@ -39,7 +41,7 @@ class Mail
         $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) : '';
         $nom = isset($_POST['nom']) ? htmlspecialchars(substr($_POST['nom'], 0, 100)) : '';
         $objet = isset($_POST['objet']) ? htmlspecialchars(substr($_POST['objet'], 0, 150)) : '';
-        $message = isset($_POST['message']) ? htmlspecialchars(substr($_POST['message'], 0, 1000)) : '';
+        $message = isset($_POST['message']) ? nl2br(htmlspecialchars($_POST['message'], 0, 1000)) : '';
 
         // Vérification si l'e-mail est valide
         if (!$email) {
@@ -52,7 +54,8 @@ class Mail
             <p><strong>E-mail :</strong> $email</p>
             <p><strong>Nom :</strong> $nom</p>
             <p><strong>Objet :</strong> $objet</p>
-            <p><strong>Message :</strong><br>$message</p>
+            <p><strong>Message:</strong></p>
+            <p>$message</p>
             EOT;
                 $this->mailClass = $mail;                
     }
