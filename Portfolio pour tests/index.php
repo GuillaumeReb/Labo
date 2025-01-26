@@ -15,15 +15,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $resp = $mail->send();
 
     $class = $resp ? 'succes':'danger';
-    $info = $resp ? 'Mail envoyé':'Mail non envoyé !!';
+    $info = $resp ? 'Mail envoyé avec succes':'Mail non envoyé !!';
+
+    // Redirection pour éviter la soumission du formulaire lors du rafraîchissement de la page
+    header("Location: " . $_SERVER['REQUEST_URI']);
+    exit();
   }
 
   // Affichage classique si pas d'AJAX
-  echo '<div class="' . $class . '">' . $info . '</div>';
-} else {
-    echo '<div class="danger">Veuillez remplir tous les champs du formulaire.</div>';
+//   echo '<div class="' . $class . '">' . $info . '</div>';
+// } else {
+//     echo '<div class="danger">Veuillez remplir tous les champs du formulaire.</div>';
+// }
 }
-
 ?>
 
 <!DOCTYPE html>
