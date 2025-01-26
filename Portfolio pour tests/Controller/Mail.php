@@ -4,6 +4,7 @@ namespace Controller;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+use Exception;
 
 class Mail
 {
@@ -12,6 +13,8 @@ class Mail
     {
         $mail= new PHPMailer();
         //Server settings
+        // $mail->SMTPDebug = 2; // Mode de débogage (affiche des détails SMTP)
+        // $mail->Debugoutput = 'html'; // Format lisible
         $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.hostinger.fr';                     //Set the SMTP server to send through
@@ -19,7 +22,8 @@ class Mail
         $mail->Username   = 'contact@guillaume-rebourgeon.fr';      //SMTP username
         $mail->Password   = 'Mail2024!';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-        $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->Port = 465;
+        //$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
         $mail->setFrom('contact@guillaume-rebourgeon.fr', 'Formulaire');
@@ -31,23 +35,36 @@ class Mail
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Formulaire de contact de mon Portfolio';
-        $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-        $nom = isset($_POST['nom']) ? htmlspecialchars($_POST['nom']) : '';
-        $objet = isset($_POST['objet']) ? htmlspecialchars($_POST['objet']) : '';
-        $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
+
+        $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) : '';
+        $nom = isset($_POST['nom']) ? htmlspecialchars(substr($_POST['nom'], 0, 100)) : '';
+        $objet = isset($_POST['objet']) ? htmlspecialchars(substr($_POST['objet'], 0, 150)) : '';
+        $message = isset($_POST['message']) ? htmlspecialchars(substr($_POST['message'], 0, 1000)) : '';
+
+        // Vérification si l'e-mail est valide
+        if (!$email) {
+            throw new Exception("Adresse e-mail invalide.");
+        }
+
+        // Corps du message
 
         $mail->Body = <<<EOT
-            E-mail: $email
-            Nom: $nom
-            Objet: $objet
-            Message: $message
+            <p><strong>E-mail :</strong> $email</p>
+            <p><strong>Nom :</strong> $nom</p>
+            <p><strong>Objet :</strong> $objet</p>
+            <p><strong>Message :</strong><br>$message</p>
             EOT;
                 $this->mailClass = $mail;                
     }
     public function send()
     {
-        $resp= $this->mailClass->send();
-        return $resp;
+        try {
+            $resp = $this->mailClass->send();
+            return $resp;
+        } catch (Exception $e) {
+            echo "Erreur lors de l'envoi : {$this->mailClass->ErrorInfo}";
+            return false;
+        }        
 
     }
 }

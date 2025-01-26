@@ -5,8 +5,7 @@ use Controller\Mail;
 require 'vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  var_dump($_POST); // Vérifie les données envoyées par le formulaire
-  exit;
+  
   if (isset($_POST['email']) && !empty($_POST['email']) && 
   isset($_POST['nom']) && !empty($_POST['nom']) &&
   isset($_POST['objet']) && !empty($_POST['objet']) &&
@@ -960,7 +959,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
