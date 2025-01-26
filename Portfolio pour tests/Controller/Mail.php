@@ -28,7 +28,7 @@ class Mail
         $mail->CharSet = 'UTF-8';
 
         //Recipients
-        $mail->setFrom('contact@guillaume-rebourgeon.fr', 'Formulaire');
+        $mail->setFrom('contact@guillaume-rebourgeon.fr', 'Formulaire de contact de mon Portfolio');
         $mail->addAddress('guillaume.rebourgeon@hotmail.fr', 'Guillaume');     //Add a recipient
 
         
