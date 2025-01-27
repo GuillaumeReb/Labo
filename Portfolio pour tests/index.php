@@ -19,26 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $class = $resp ? 'succes':'danger';
     $info = $resp ? 'Mail envoyé avec succes':'Mail non envoyé !!';
 
-    // Redirection avec un message de confirmation via SweetAlert
-    // echo "<script>
-    //         Swal.fire({
-    //             title: '" . ($resp ? "Succès" : "Erreur") . "',
-    //             text: '" . $info . "',
-    //             icon: '" . ($resp ? "success" : "error") . "',
-    //             confirmButtonText: 'OK'
-    //         });
-    //       </script>";
-
-    // Redirection pour éviter la soumission du formulaire lors du rafraîchissement de la page
     header("Location: " . $_SERVER['REQUEST_URI']);
     exit();
   }
-
-  // Affichage classique si pas d'AJAX
-//   echo '<div class="' . $class . '">' . $info . '</div>';
-// } else {
-//     echo '<div class="danger">Veuillez remplir tous les champs du formulaire.</div>';
-// }
 }
 ?>
 
@@ -118,13 +101,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <p><span class="typed"
           data-typed-items="Développeur Web, Développeur Web et Web Mobile, Développeur HTML/CSS, Développeur JavaScript, Développeur Symfony/PHP "></span>
       </p>
-      <div class="social-links">
-        <a target="_blank" href="https://github.com/GuillaumeReb" class="githyb"><i class="bi bi-github"></i></a>
+      <!-- <div class="social-links">
+        <a target="_blank" href="https://github.com/GuillaumeReb" class="githyb"><i class="bi bi-github"></i></a> -->
         <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
         <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
-      </div>
+      <!-- </div> -->
     </div>
   </section><!-- End Hero -->
 
@@ -164,6 +147,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   <li><i class="bi bi-chevron-right"></i> <strong>Mobile:</strong> <span>06 58 99 27 51</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Villefranche Sur Saône</span>
                   </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <span><a target="_blank" href="https://github.com/GuillaumeReb"><i class="bi bi-github"></i></a></span>
+                  </li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -196,16 +181,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         <!--bouton de message pop up-->
-        <div class="position-relative m-5">
+        <!-- <div class="position-relative m-5"> -->
           <!-- Button trigger modal enveloppe avec le message -->
           <!-- <button type="button"
             class="btn btn-primary btn-lg btn position-absolute top-50 start-50 translate-middle bi bi-envelope-exclamation fs-1"
             data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             
           </button> -->
-        </div>
+        <!-- </div> -->
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -226,7 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!--Fin du message-->
 
@@ -396,6 +381,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h3 class="resume-title">Formation</h3>
             <div class="resume-item pb-0">
               <h4>AFPA</h4>
+              <h5>2023 - 2024</h5>
               <p><em>Diplômé en développement Web, j'ai suivi une formation complète couvrant tous les aspects du
                   développement web.
                   De la conception front-end à la gestion de bases de données back-end, j'ai acquis une maîtrise d'une
@@ -427,25 +413,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h3 class="resume-title">Diplômes</h3>
             <div class="resume-item">
               <h4>Titre Professionnel (Niveau 5) Développeur web et web mobile</h4>
-              <h5>2023 - 2024</h5>
+              <h5>2024</h5>
               <p><em></em></p>
               <p></p>
             </div>
             <div class="resume-item">
               <h4>Baccalauréat Professionnel Accueil et Services</h4>
-              <h5>2000 - 2002</h5>
+              <h5>2002</h5>
               <p><em>Villefranche-Sur-Saône</em></p>
               <p></p>
             </div>
             <div class="resume-item">
               <h4>Brevet d'études Professionnel Vente</h4>
-              <h5>1998 - 2000</h5>
+              <h5>2000</h5>
               <p><em>Villefranche-Sur-Saône</em></p>
               <p></p>
             </div>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Expérience Professionnelle</h3>
+
+            <div class="resume-item">
+              <h4>SmartBooster</h4>
+              <h5>2024</h5>
+              <p><em>Villefranche-Sur-Saône</em></p>
+            </div>
+
             <div class="resume-item">
               <h4>Ouverture d'un restaurant à Hua Hin</h4>
               <h5>2021 - 2023</h5>
@@ -872,21 +865,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
           <div class="col-lg-4">
             <div class="info">
+              
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Adresse:</h4>
+                <h4>Adresse :</h4>
                 <p>Villefranche-Sur-Saône</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
+                <h4>Email :</h4>
                 <p><a href="mailto:guillaume.rebourgeon@hotmail.fr">guillaume.rebourgeon@hotmail.fr</a></p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Mobile:</h4>
+                <h4>Mobile :</h4>
                 <p>06 58 99 27 51</p>
               </div>
 
@@ -951,7 +945,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="github"><i class="bi bi-github"></i></a>
+        <a target="_blank" href="https://github.com/GuillaumeReb" class="github"><i class="bi bi-github"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
