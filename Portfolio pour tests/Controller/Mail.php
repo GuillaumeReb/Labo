@@ -18,7 +18,7 @@ class Mail
         $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'contact@guillaume-rebourgeon.fr';      //SMTP username
-        $mail->Password   = 'Mail2024!';                            //SMTP password
+        $mail->Password   = 'Mot de passe a mettre';                            //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port = 465;
         //$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
