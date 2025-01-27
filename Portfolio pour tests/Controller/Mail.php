@@ -13,14 +13,12 @@ class Mail
     {
         $mail= new PHPMailer();
         //Server settings
-        // $mail->SMTPDebug = 2; // Mode de débogage (affiche des détails SMTP)
-        // $mail->Debugoutput = 'html'; // Format lisible
-        $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
+        $mail->SMTPDebug = SMTP::DEBUG_OFF;                          //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.hostinger.fr';                     //Set the SMTP server to send through
+        $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'contact@guillaume-rebourgeon.fr';      //SMTP username
-        $mail->Password   = 'Mail2024!';                               //SMTP password
+        $mail->Password   = 'Mail2024!';                            //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port = 465;
         //$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
