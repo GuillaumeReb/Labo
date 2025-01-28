@@ -13,11 +13,32 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam libero at tellus rhoncus, 
             ac iaculis massa euismod. Duis nec pharetra odio, ut posuere sem. Vestibulum pulvinar cursus erat ut ultrices.
              Fusce mattis, lacus vel pharetra varius, lectus dolor pretium diam, finibus elementum ante purus sit amet 
-             justo. Sed tincidunt semper purus, ut facilisis felis venenatis sit amet. Donec eget nunc nulla. 
-             Aenean ac massa vel risus bibendum egestas bibendum quis mauris.
+             justo. Sed tincidunt semper purus, ut facilisis felis venenatis sit amet.
         </p>
-
     </div>
+    <script>
+        let textElement = document.querySelector('.text');
+        let textContent = textElement.textContent;
+        textElement.innerHTML = '';
+
+        for (let char of textContent){
+            let span = document.createElement('span');
+            span.textContent = char;
+            textElement.appendChild(span);
+        }
+
+        let spans = document.querySelectorAll('span');
+        window.addEventListener('scroll', () => {
+            let scrollDistance = window.scrollY;
+            spans.forEach((span,index) => {
+                if (scrollDistance >= (index + 1) * 10) {
+                    span.classList.add('active');
+                } else {
+                    span.classList.remove('active');
+                }
+            })
+        })
+    </script>
     
 </body>
 </html>
