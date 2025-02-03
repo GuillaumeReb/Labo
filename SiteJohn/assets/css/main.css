@@ -2577,6 +2577,7 @@ section,
   text-transform: none !important;
 }
 
+/* Image dans a propos (la tête a John) */
 .img-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2585,3 +2586,14 @@ section,
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Ajuste la taille de l'image tout en gardant sa réactivité */
+.img-responsive-custom {
+  max-width: 60%;
+  /* Ajuste cette valeur entre 50% et 70% */
+  width: auto;
+  /* Pour garder les proportions */
+  height: auto;
+}
+
+/*Fin de Image dans a propos (la tête a John) */
