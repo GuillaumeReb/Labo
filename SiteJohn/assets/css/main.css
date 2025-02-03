@@ -890,7 +890,8 @@ section,
 
 .features .nav-link {
   background-color: var(--surface-color);
-  color: var(--heading-color);
+  color: orange;
+  /*var(--heading-color);*/
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 15px 20px;
   transition: 0.3s;
@@ -898,7 +899,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   height: 100%;
 }
 
