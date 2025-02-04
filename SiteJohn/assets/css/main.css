@@ -897,6 +897,7 @@ section,
 
 .features .nav-tabs {
   border: 0;
+  margin-bottom: 50px;
 }
 
 .features .nav-link {
@@ -1023,10 +1024,13 @@ section,
   margin: 10px;
   background: var(--accent-color);
   color: var(--contrast-color);
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Ajout d'une transition douce */
 }
 
 .call-to-action .cta-btn:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  transform: scale(1.1); /* Grossissement du bouton à 110% de sa taille */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
 }
 
 /*--------------------------------------------------------------
