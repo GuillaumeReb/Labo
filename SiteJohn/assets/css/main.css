@@ -99,11 +99,14 @@ h6 {
   font-family: var(--heading-font);
 }
 
-li {
+/* Permet de passer a la ligne proprement */
+.ligne{
   display: flex;
   align-items: flex-start; /* Aligne l'icône avec le haut du texte */
   gap: 8px; /* Espace entre l'icône et le texte */
+
 }
+
 
 
 /* PHP Email Form Messages
@@ -891,7 +894,6 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
-
 
 .features .nav-tabs {
   border: 0;
