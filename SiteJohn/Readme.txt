@@ -1,6 +1,6 @@
 # 🚀 Optimisation SEO pour la Landing Page du Consultant
 
-## 📌 1. Structure des URL
+ 📌 1. Structure des URL
 - Utiliser des URL courtes, claires et descriptives (`/services-consultant` au lieu de `/page1`).
 - Éviter les caractères spéciaux et les majuscules.
 - Séparer les mots avec des **tirets (-)** et non des underscores (_).
