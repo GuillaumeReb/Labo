@@ -694,6 +694,14 @@ section,
   overflow: hidden;
   position: relative;
   background: linear-gradient(0deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color) 90%, white 10%) 100%);
+  
+  /* Si john veux cette image mais le résultat n'est pas top */
+  /* background-image: url(../img/js/FondJSConsultant.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  min-height: 100vh;*/
+
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -2669,3 +2677,9 @@ section,
 }
 
 /*Fin de Image dans a propos (la tête a John) */
+
+
+.ampoule-img {
+  width: 180px; /* Ajustez selon la taille souhaitée */
+  height: auto;
+}
