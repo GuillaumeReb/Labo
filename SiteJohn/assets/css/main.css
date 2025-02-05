@@ -2683,3 +2683,9 @@ section,
   width: 180px; /* Ajustez selon la taille souhaitée */
   height: auto;
 }
+
+.ampoule-imgBas {
+  width: 120px; /* Taille de l'image ajustée selon tes besoins */
+  height: auto;
+  margin-left: -250px; /* Un peu d'espace entre le texte et l'image */
+}
