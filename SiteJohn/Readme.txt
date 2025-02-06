@@ -69,3 +69,6 @@ Partager le site sur LinkedIn, Twitter et autres réseaux sociaux pour générer
 ✅ Présence d’un fichier robots.txt et sitemap.xml
 
 🚀 Une landing page bien optimisée SEO = plus de visibilité et plus de clients !
+
+
+Lien du site provisoire : https://guillaume-rebourgeon.fr/js/index.html
