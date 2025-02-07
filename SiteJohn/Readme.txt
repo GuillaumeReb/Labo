@@ -72,3 +72,6 @@ Partager le site sur LinkedIn, Twitter et autres réseaux sociaux pour générer
 
 
 Lien du site provisoire : https://guillaume-rebourgeon.fr/js/index.html
+
+
+Juste un test pour vérifier la connexion.
