@@ -1,0 +1,5 @@
+Dans ce dossier mettre toutes les images et documents qui serve au site.
+
+Mais ne pas servire des images directement ici copier coller celle dont j'ai besoin
+
+dans assets.
