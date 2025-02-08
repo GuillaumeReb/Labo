@@ -1665,6 +1665,10 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact {
+  margin-bottom: -100px; /* a enlever si je change le logo**/
+}
+
 .contact .info-item+.info-item {
   margin-top: 40px;
 }
@@ -2688,4 +2692,14 @@ section,
   width: 120px; /* Taille de l'image ajustée selon tes besoins */
   height: auto;
   margin-left: -250px; /* Un peu d'espace entre le texte et l'image */
+}
+
+.LogoBas {
+  max-width: 100%; /* Ajuste la taille du logo sans qu'il soit trop grand */
+  height: auto; /* Garde le ratio */
+  display: block; /* Évite les marges invisibles */
+  margin: 0 auto; /* Centre l’image horizontalement */
+  position: relative;
+  padding: 0; /* S'assure qu'il n'y a pas de padding */
+  top: -100px; /* Ajuste vers le haut si nécessaire */
 }
