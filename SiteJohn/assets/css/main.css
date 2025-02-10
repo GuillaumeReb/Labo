@@ -689,13 +689,14 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* .hero {
+.hero {
   width: 100%;
   overflow: hidden;
   position: relative;
   background: linear-gradient(0deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color) 90%, white 10%) 100%);
-  
-  
+  padding-bottom: 0px;
+}
+  /* 
   background-image: url(../img/js/Carte\ visite\ face.png);
   background-size: 90%;
   background-position: center;
@@ -709,11 +710,11 @@ section,
   align-items: center;
 } */
 
-.hero {
+/* .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ou une autre hauteur selon vos besoins */
-}
+  height: 100vh;
+} */
 
 /* .background-link {
   display: block;
@@ -723,15 +724,62 @@ section,
   /* color: inherit; Conserve la couleur du texte */
 /* } */
 
-.background-image {
+/* .background-image {
   background-image: url(../img/js/Carte\ visite\ face.png);
-  background-size: 75%; /* Ou une autre taille selon vos besoins */
+  background-size: 75%; 
   background-position: center;
   background-repeat: no-repeat;
   background-color: #2a2c39; 
   width: 100%;
   height: 100%;
+} */
+
+/* Styles pour la section hero */
+
+.carte {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
+
+.carte img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajuste l'image pour qu'elle s'adapte à la div sans déformation */
+  border-radius: 10px;
+}
+
+/* Image dans page d'accueil (carte de visite JS consultant) */
+.carte img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Ajuste la taille de l'image tout en gardant sa réactivité */
+.img-responsive-custom {
+  max-width: 60%;
+  /* Ajuste cette valeur entre 50% et 70% */
+  width: auto;
+  /* Pour garder les proportions */
+  height: auto;
+}
+
+/*Fin de Image */
+
+
+
+
+
 
 
 .hero .carousel-container {
