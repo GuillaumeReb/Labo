@@ -1740,7 +1740,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  margin-bottom: -100px; /* a enlever si je change le logo**/
+  margin-bottom: 10px; /* a enlever si je change le logo**/
 }
 
 .contact .info-item+.info-item {
