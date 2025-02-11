@@ -72,3 +72,5 @@ Partager le site sur LinkedIn, Twitter et autres réseaux sociaux pour générer
 
 
 Lien du site provisoire : https://guillaume-rebourgeon.fr/js/index.html
+
+Refaire les tests sur les block qui doivent réagir au survol.
