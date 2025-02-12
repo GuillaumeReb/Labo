@@ -7,3 +7,5 @@ License: https://bootstrapmade.com/license/
 
 Je pense me servir de se template. Ne garder que le blog et supprimer le reste
 récupérer la partie contact.
+
+Voir si je passe en Symfony ???
