@@ -1,0 +1,27 @@
+Notes en vrac : 
+ 
+	Un article de blog doit contenir entre 1700 et 3000 mots.
+	
+	Il est coseiller de publier 4 articles par semaine.
+Les jours conseiller sont : Jeudi, vendredi; samedi et dimanche.
+Les horaire conseiller sont : vers 12h15 et entre 13h et 16h.
+
+	Pour le moment je vais essayer de publier deux nouveaux articles par semaine.
+Les Jeudi à 12h30 et les dimanche à 15h heure française.
+Peut etre que le rythme changeras dans les mois a venir.
+
+
+	Comment créer un article :
+
+	Trouver une idée.
+	Faire des recherches
+	L'écrire
+	Trouver des photos d'illustration
+	Soigner la mise en page
+	Programmer la publication
+
+pour le bot twitter si possible :
+	réponse automatique au personnes qui s'abonne : Hello, thank you very much for following 
+							my twitter acount. Stay in touch. Natacha
+							Bonjour, merci beaucoup de suivre mon compte 
+							twitter. À bientôt! Natacha
