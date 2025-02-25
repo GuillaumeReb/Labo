@@ -1438,11 +1438,29 @@ section,
   height: 100%; */
 }
 
-.testimonials .testimonial-item .testimonial-img {
+/* .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   margin-right: 15px;
+} */
+
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 150px; /* Augmente la largeur */
+  max-height: 100px; /* Garantit que le logo ne devient pas trop grand */
+  height: auto; /* Maintient les proportions originales */
+  object-fit: contain; /* Évite le rognage ou la déformation */
+  border-radius: 0; /* Assure que les logos restent carrés/rectangulaires */
+  display: block;
+  margin: 0 auto 15px; /* Centre le logo et ajoute un espacement */
 }
+
+
+
+
+
+
+
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
