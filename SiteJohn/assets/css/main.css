@@ -464,6 +464,7 @@ h6 {
   font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
+  color: #ef6603;
 }
 
 .footer .social-links {
@@ -486,7 +487,16 @@ h6 {
   transition: 0.3s;
 }
 
-.footer .social-links a:hover {
+.blue-link {
+  color: rgb(25, 150, 217) !important; /* Forcer la couleur bleue */
+  text-decoration: none; /* Optionnel : enlève le soulignement */
+}
+
+
+
+
+
+/* .footer .social-links a:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
 }
@@ -499,7 +509,7 @@ h6 {
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Preloader
@@ -1454,13 +1464,6 @@ section,
   display: block;
   margin: 0 auto 15px; /* Centre le logo et ajoute un espacement */
 }
-
-
-
-
-
-
-
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
