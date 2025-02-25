@@ -1179,6 +1179,31 @@ section,
   }
 }
 
+/* TEST */
+
+.services .section-title ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services .section-title ul li {
+  padding-bottom: 10px;
+}
+
+.services .section-title ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.services .section-title p:last-child {
+  margin-bottom: 0;
+}
+
+/* TEST */
+
+
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
