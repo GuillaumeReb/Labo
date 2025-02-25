@@ -986,6 +986,14 @@ section,
   margin-bottom: 50px;
 }
 
+.nav-tabs .nav-item:first-child .nav-link {
+  background-color: #f0f0f0; /* Gris clair */
+  /* border-radius: 5px; Optionnel pour arrondir les bords */
+}
+
+
+
+
 .features .nav-link {
   background-color: var(--surface-color);
   color: orange;
