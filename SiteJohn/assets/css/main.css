@@ -2947,29 +2947,56 @@ section,
 
 /*Fin de Image dans contact */
 
-/* Style du bouton gauche */
+/* Style du bouton enveloppe */
+/* Style du bouton enveloppe */
 #scroll-contact-left {
   position: fixed;
-  left: 15px; /* Position à gauche */
+  left: 25px; /* Position à gauche */
   bottom: 15px; /* Aligné avec le bouton existant */
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
   transition: all 0.4s;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px; /* Espacement entre l'icône et le texte */
+  padding: 0 15px; /* Espacement intérieur */
+
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* Icône enveloppe */
 #scroll-contact-left i {
-  font-size: 24px;
+  font-size: 34px;
+  font-weight: bold;
   color: var(--contrast-color);
 }
 
 /* Effet au survol */
 #scroll-contact-left:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: scale(1.05); /* Légère mise en avant */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Quand le bouton est actif, visible */
+#scroll-contact-left.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/* Fin bouton enveloppe */
+
+/* Pour que les deux boutons disparaissent en vue smartphone */
+
+@media (max-width: 768px) {
+  #scroll-top, 
+  #scroll-contact-left {
+    display: none !important;
+  }
 }
