@@ -2936,8 +2936,9 @@ section,
 }
 
 /* Ajuste la taille de l'image tout en gardant sa réactivité */
+/* ATTENTION Modifie la taille des 3 images */
 .img-responsive-custom {
-  max-width: 60%;
+  max-width: 70%;
   /* Ajuste cette valeur entre 50% et 70% */
   width: auto;
   /* Pour garder les proportions */
