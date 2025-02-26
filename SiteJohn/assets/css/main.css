@@ -2946,3 +2946,30 @@ section,
 }
 
 /*Fin de Image dans contact */
+
+/* Style du bouton gauche */
+#scroll-contact-left {
+  position: fixed;
+  left: 15px; /* Position à gauche */
+  bottom: 15px; /* Aligné avec le bouton existant */
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icône enveloppe */
+#scroll-contact-left i {
+  font-size: 24px;
+  color: var(--contrast-color);
+}
+
+/* Effet au survol */
+#scroll-contact-left:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
