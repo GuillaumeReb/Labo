@@ -2962,8 +2962,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Espacement entre l'icône et le texte */
-  padding: 0 15px; /* Espacement intérieur */
+  
 
   visibility: hidden;
   opacity: 0;
