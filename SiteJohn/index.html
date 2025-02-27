@@ -1072,54 +1072,10 @@
   
 
   <!-- Bouton envelope -->
-<!-- Bouton envelope -->
+
 <a href="#contact" id="scroll-contact-left" class="scroll-contact d-flex align-items-center justify-content-center">
   <i class="bi bi-envelope"></i>
 </a>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const scrollButtonLeft = document.getElementById("scroll-contact-left");
-    const contactSection = document.querySelector("#contact");
-
-    if (contactSection && scrollButtonLeft) {
-      // Fonction pour afficher le bouton au scroll (après 100px)
-      function handleScroll() {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 100) {
-          scrollButtonLeft.classList.add("active");
-        } else {
-          scrollButtonLeft.classList.remove("active");
-        }
-      }
-
-      // Lorsque la page est scrollée, mettre à jour l'affichage du bouton
-      document.addEventListener("scroll", handleScroll);
-
-      // IntersectionObserver pour cacher le bouton quand on arrive dans la section "contact"
-      let observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              scrollButtonLeft.classList.remove("active");
-            } else {
-              scrollButtonLeft.classList.add("active");
-            }
-          });
-        },
-        { threshold: 0.2 } // Quand 20% de la section est visible
-      );
-
-      observer.observe(contactSection);
-
-      // Vérifier l'affichage du bouton au chargement
-      handleScroll();
-    }
-  });
-</script>
-
-<!-- Fin Bouton envelope -->
-
 
   <!-- Fin Bouton envelope -->
 
@@ -1143,7 +1099,6 @@
   
   
 
-  
 
 </body>
 

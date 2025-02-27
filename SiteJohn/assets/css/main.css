@@ -488,8 +488,10 @@ h6 {
 }
 
 .blue-link {
-  color: rgb(25, 150, 217) !important; /* Forcer la couleur bleue */
-  text-decoration: none; /* Optionnel : enlève le soulignement */
+  color: rgb(25, 150, 217) !important;
+  /* Forcer la couleur bleue */
+  text-decoration: none;
+  /* Optionnel : enlève le soulignement */
 }
 
 
@@ -999,7 +1001,8 @@ section,
 }
 
 .nav-tabs .nav-item:first-child .nav-link {
-  background-color: #f0f0f0; /* Gris clair */
+  background-color: #f0f0f0;
+  /* Gris clair */
   /* border-radius: 5px; Optionnel pour arrondir les bords */
 }
 
@@ -1350,7 +1353,8 @@ section,
 .flip-card {
   perspective: 1000px;
   width: 100%;
-  height: 220px; /* Hauteur fixe pour éviter les décalages */
+  height: 220px;
+  /* Hauteur fixe pour éviter les décalages */
   cursor: pointer;
 }
 
@@ -1366,7 +1370,7 @@ section,
   transform: rotateY(180deg);
 }
 
-.flip-card-front, 
+.flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
@@ -1396,7 +1400,7 @@ section,
   align-items: center;
   justify-content: center;
 
-  
+
   transition: all 0.3s ease-in-out;
   /* opacity: 0; */
   transform: translateY(10px);
@@ -1458,13 +1462,19 @@ section,
 
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 150px; /* Augmente la largeur */
-  max-height: 100px; /* Garantit que le logo ne devient pas trop grand */
-  height: auto; /* Maintient les proportions originales */
-  object-fit: contain; /* Évite le rognage ou la déformation */
-  border-radius: 0; /* Assure que les logos restent carrés/rectangulaires */
+  width: 150px;
+  /* Augmente la largeur */
+  max-height: 100px;
+  /* Garantit que le logo ne devient pas trop grand */
+  height: auto;
+  /* Maintient les proportions originales */
+  object-fit: contain;
+  /* Évite le rognage ou la déformation */
+  border-radius: 0;
+  /* Assure que les logos restent carrés/rectangulaires */
   display: block;
-  margin: 0 auto 15px; /* Centre le logo et ajoute un espacement */
+  margin: 0 auto 15px;
+  /* Centre le logo et ajoute un espacement */
 }
 
 .testimonials .testimonial-item h3 {
@@ -2951,8 +2961,10 @@ section,
 /* Style du bouton enveloppe */
 #scroll-contact-left {
   position: fixed;
-  left: 25px; /* Position à gauche */
-  bottom: 15px; /* Aligné avec le bouton existant */
+  left: 15px;
+  /* Position à gauche */
+  bottom: -15px;
+  /* Aligné avec le bouton existant */
   z-index: 99999;
   background-color: var(--accent-color);
   width: 100px;
@@ -2962,7 +2974,6 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   visibility: hidden;
   opacity: 0;
@@ -2978,7 +2989,8 @@ section,
 /* Effet au survol */
 #scroll-contact-left:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  transform: scale(1.05); /* Légère mise en avant */
+  transform: scale(1.05);
+  /* Légère mise en avant */
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
 }
 
@@ -2994,7 +3006,8 @@ section,
 /* Pour que les deux boutons disparaissent en vue smartphone */
 
 @media (max-width: 768px) {
-  #scroll-top, 
+
+  #scroll-top,
   #scroll-contact-left {
     display: none !important;
   }
