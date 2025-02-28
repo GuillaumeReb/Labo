@@ -3062,7 +3062,7 @@ section,
 
 /* Pour que les deux boutons disparaissent en vue smartphone */
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
 
   #scroll-top,
   #scroll-contact-left {
