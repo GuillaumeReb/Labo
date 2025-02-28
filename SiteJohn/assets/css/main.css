@@ -692,12 +692,23 @@ section,
   margin: 4px 10px;
 }
 
-.section-title p {
-  color: var(--heading-color);
+.section-title h3 {
+  /* color: var(--heading-color); */
   margin: 0;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: var(--heading-font);
+
+}
+
+.section-title p {
+  /* color: var(--heading-color); */
+  margin: 0;
+  margin-top: 1rem;
+  /* font-size: 28px; */
+  /* font-weight: 700; */
+  /* text-transform: uppercase; */
   font-family: var(--heading-font);
 }
 
