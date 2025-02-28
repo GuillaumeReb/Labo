@@ -2962,6 +2962,46 @@ section,
   border-radius: 5%;
 }
 
+@media (max-width: 768px) {
+
+  /* Pour les écrans de taille moyenne et petite */
+  .LogoBas {
+    max-width: 70%;
+    /* Réduit la taille */
+    top: -20px;
+    /* Ajuste la position pour ne pas gêner */
+    margin-bottom: 10px;
+    /* Réduire l'espace avec le footer */
+  }
+
+  /* Désactiver l'effet hover sur mobile */
+  .LogoBas:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Pour les très petits écrans (smartphones) */
+  .LogoBas {
+    max-width: 50%;
+    /* Encore plus petit sur mobiles */
+    top: -10px;
+    /* Ajustement pour éviter le chevauchement */
+    margin-bottom: 5px;
+    /* Diminuer encore plus l'espace avec le footer */
+  }
+
+  /* Désactiver l'effet hover sur mobile */
+  .LogoBas:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+}
+
+
 /* Ajuste la taille de l'image tout en gardant sa réactivité */
 /* ATTENTION Modifie la taille des 3 images */
 .img-responsive-custom {
