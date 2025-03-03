@@ -3069,3 +3069,8 @@ section,
     display: none !important;
   }
 }
+
+/* Texte dans A propo */
+.lead {
+  text-align: justify;
+}
