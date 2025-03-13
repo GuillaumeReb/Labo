@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information sur le Projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "✔ ";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📌 À Propos du Projet <span id="nom-projet">[Nom du Projet]</span></h1>
+        
+        <h2>🗓️ Date de création</h2>
+        <p>📅 <span id="date-projet">[Mois / Année]</span></p>
+        
+        <h2>🏫 Réalisé avec</h2>
+        <p>🎓 <span id="formation">[Nom de l'organisme]</span></p>
+        
+        <h2>🔗 Lien GitHub</h2>
+        <p><a id="lien-github" href="#" target="_blank">🔗 Voir le code sur GitHub</a></p>
+        
+        <h2>🛠️ Technologies utilisées</h2>
+        <ul>
+            <li><strong>Frontend :</strong> <span id="frontend">[Technologies]</span></li>
+            <li><strong>Backend :</strong> <span id="backend">[Technologies]</span></li>
+            <li><strong>Base de données :</strong> <span id="database">[Technologies]</span></li>
+            <li><strong>Autres outils :</strong> <span id="outils">[Outils]</span></li>
+        </ul>
+        
+        <h2>📖 Description du projet</h2>
+        <p id="description">[Brève description du projet]</p>
+        
+        <h2>💡 Défis rencontrés et solutions</h2>
+        <ul>
+            <li><strong>Problème X :</strong> <span id="probleme-x">[Solution trouvée]</span></li>
+            <li><strong>Problème Y :</strong> <span id="probleme-y">[Ce que j'ai appris]</span></li>
+        </ul>
+        
+        <h2>🎯 Ce que j’ai appris</h2>
+        <p id="apprentissage">[Compétences acquises]</p>
+    </div>
+</body>
+</html>
