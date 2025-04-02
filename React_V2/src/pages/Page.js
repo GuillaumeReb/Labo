@@ -8,7 +8,7 @@ const Page = () => {
     <div>
       <Logo />
       <Navigation />
-      <h1>Accueil V2</h1>
+      <h1 style={{ color: "green", padding: "1em" }}>Accueil V2</h1>
       <Countries />
     </div>
   );
