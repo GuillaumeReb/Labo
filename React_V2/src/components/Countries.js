@@ -16,7 +16,7 @@ const Countries = () => {
   }, []);
 
   return (
-    <div className="countries">
+    <div className="countries" style={{ padding: "1em" }}>
       <ul className="radio-container">
         <input
           type="range"

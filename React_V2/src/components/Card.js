@@ -2,7 +2,14 @@ import React from "react";
 
 const Card = ({ country }) => {
   return (
-    <div>
+    <div
+      style={{
+        padding: "1em",
+        margin: "1em",
+        background: "black",
+        borderRadius: "10%",
+      }}
+    >
       <li className="card">
         <img
           src={country.flags.svg}
