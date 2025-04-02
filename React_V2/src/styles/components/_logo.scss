@@ -1,17 +1,20 @@
 .logo {
   @include verticalCenter;
   margin: 5px auto;
-  width: 200px;
+  width: 400px; /* Redimensionne la largeur du logo */
   border-radius: 20px;
-  padding: 5px 0;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+  padding: 10px 0; /* Augmente le padding proportionnellement */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.307); /* Ombre plus large */
   background: url(../../assets/img/main.jpg) center/cover;
 
   img {
-    height: 40px;
+    height: 80px; /* Redimensionne l'image */
+    width: auto; /* Garder les proportions */
   }
+
   h3 {
-    margin-left: 10px;
+    margin-left: 20px; /* Augmenter l'espacement du texte proportionnellement */
     color: $color-1;
+    font-size: 1.5rem; /* Ajuste la taille du texte proportionnellement */
   }
 }
