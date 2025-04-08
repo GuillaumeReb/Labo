@@ -1,402 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cake au chocolat</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog Details - Tempo Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Tempo
   * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="blog-details-page">
+  <body class="blog-details-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Thailand Chronicles</h1>
+        </a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Thailand Chronicles</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <!-- <li><a href="#hero">Home</a></li>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <!-- <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li> -->
-          <li><a href="index.html">Blog</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Articles</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Recettes</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Plats traditionnells</a></li>
-                  <li><a href="#">Entrées</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Dessert</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Histoire</a></li>
-              <li><a href="#">Découverte du pays</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+            <li><a href="index.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="active"
+                ><span>Articles</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Recettes</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Plats traditionnells</a></li>
+                    <li><a href="#">Entrées</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Dessert</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Histoire</a></li>
+                <li><a href="#">Découverte du pays</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/HautPageAccueil.jpg);">
-      <div class="container position-relative">
-        <h1>Cake au chocolat</h1>
-        <p>Une recette irrésistible pour les amateurs de chocolat.</p>
-        <!-- <nav class="breadcrumbs">
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        style="background-image: url(assets/img/HautPageAccueil.jpg)"
+      >
+        <div class="container position-relative">
+          <h1>Cake au chocolat</h1>
+          <p>Une recette irrésistible pour les amateurs de chocolat.</p>
+          <!-- <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li class="current">Blog Details</li>
           </ol>
         </nav> -->
+        </div>
       </div>
-    </div><!-- End Page Title -->
+      <!-- End Page Title -->
 
-    <div class="container">
-      <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Blog Details Section -->
+            <section id="blog-details" class="blog-details section">
+              <div class="container">
+                <article class="article">
+                  <div class="post-img">
+                    <img
+                      src="assets/img/recettes/chocolat.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
 
-        <div class="col-lg-8">
+                  <h2 class="title">
+                    Cake au chocolat : une recette irrésistible pour les
+                    amateurs de chocolat
+                  </h2>
 
-          <!-- Blog Details Section -->
-          <section id="blog-details" class="blog-details section">
-            <div class="container">
+                  <div class="meta-top">
+                    <ul>
+                      <li class="d-flex align-items-center">
+                        <i class="bi bi-person"></i>
+                        <a href="blog-details.html">John Doe</a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi bi-clock"></i>
+                        <a href="blog-details.html"
+                          ><time datetime="2020-01-01">Fev 16, 2025</time></a
+                        >
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <i class="bi bi-chat-dots"></i>
+                        <a href="blog-details.html">12 Comments</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End meta top -->
 
-              <article class="article">
-
-                <div class="post-img">
-                  <img src="assets/img/recettes/chocolat.jpg" alt="" class="img-fluid">
-                </div>
-
-                <h2 class="title">Cake au chocolat : une recette irrésistible pour les amateurs de chocolat</h2>
-
-                <div class="meta-top">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John
-                        Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time
-                          datetime="2020-01-01">Fev 16, 2025</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12
-                        Comments</a></li>
-                  </ul>
-                </div><!-- End meta top -->
-
-                <div class="content">
-                  <p>
-                    Vous êtes à la recherche d'une recette de cake au chocolat qui vous comblera les papilles ? Vous
-                    avez frappé à la bonne porte ! Ce cake au chocolat est non seulement délicieux, mais il est
-                    également facile à réaliser. Avec ses ingrédients simples et sa méthode de préparation étape par
-                    étape, vous pourrez réaliser un gâteau moelleux et savoureux en un rien de temps.
-                  </p>
-
-                  <p>
-                    Pour réaliser ce cake au chocolat, vous aurez besoin de farine, de poudre de cacao, de levure, de
-                    beurre salé, de sucre, d'oeufs, de lait et de vanille.
-                  </p>
-
-                  <blockquote class="mt-5">
+                  <div class="content">
                     <p>
-                      “Le chocolat est, plutôt que le nectar ou l’ambroisie, la vraie nourriture des dieux.”
+                      Vous êtes à la recherche d'une recette de cake au chocolat
+                      qui vous comblera les papilles ? Vous avez frappé à la
+                      bonne porte ! Ce cake au chocolat est non seulement
+                      délicieux, mais il est également facile à réaliser. Avec
+                      ses ingrédients simples et sa méthode de préparation étape
+                      par étape, vous pourrez réaliser un gâteau moelleux et
+                      savoureux en un rien de temps.
                     </p>
 
-                  </blockquote>
-                  <p class="text-end fst-italic fw-light">Citation de Joseph Bachot</p>
+                    <p>
+                      Pour réaliser ce cake au chocolat, vous aurez besoin de
+                      farine, de poudre de cacao, de levure, de beurre salé, de
+                      sucre, d'oeufs, de lait et de vanille.
+                    </p>
 
-                  <h3>Ingrédients</h3>
-                  <ul>
-                    <li>Farine 145 g</li>
-                    <li>Poudre de cacao 25 g</li>
-                    <li>Levure 2 cuillères à café</li>
-                    <li>Beurre salé 125 g</li>
-                    <li>Sucre 140 g</li>
-                    <li>Oeufs 3</li>
-                    <li>Lait 70 g</li>
-                    <li>Vanille 2 cuillères à café</li>
+                    <blockquote class="mt-5">
+                      <p>
+                        “Le chocolat est, plutôt que le nectar ou l’ambroisie,
+                        la vraie nourriture des dieux.”
+                      </p>
+                    </blockquote>
+                    <p class="text-end fst-italic fw-light">
+                      Citation de Joseph Bachot
+                    </p>
 
-                  </ul>
+                    <h3>Ingrédients</h3>
+                    <ul>
+                      <li>Farine 145 g</li>
+                      <li>Poudre de cacao 25 g</li>
+                      <li>Levure 2 cuillères à café</li>
+                      <li>Beurre salé 125 g</li>
+                      <li>Sucre 140 g</li>
+                      <li>Oeufs 3</li>
+                      <li>Lait 70 g</li>
+                      <li>Vanille 2 cuillères à café</li>
+                    </ul>
 
-                  <p class="mt-5">
-                    Commencez par préchauffer votre four à 180°C. Ensuite, dans un saladier, mélangez la farine, la
-                    poudre de cacao et la levure.
-                  </p>
+                    <p class="mt-5">
+                      Commencez par préchauffer votre four à 180°C. Ensuite,
+                      dans un saladier, mélangez la farine, la poudre de cacao
+                      et la levure.
+                    </p>
 
+                    <p>
+                      Dans un autre saladier, fouettez le beurre salé et le
+                      sucre jusqu'à ce que le mélange blanchisse. Ajoutez
+                      ensuite les oeufs, un à un, en continuant de fouetter.
+                      Ajoutez ensuite le mélange de farine, le lait et la
+                      vanille, et mélangez jusqu'à obtention d'une pâte
+                      homogène.
+                    </p>
+                    <p>
+                      Versez la pâte dans un moule à cake préalablement beurré
+                      et fariné, et enfournez pendant environ 30 minutes.
+                      Vérifiez la cuisson en y plantant la lame d'un couteau,
+                      elle doit ressortir propre. Laissez refroidir avant de
+                      démouler et servir.
+                    </p>
+                    <img
+                      src="assets/img/recettes/cake-au-chocolat.webp"
+                      class="img-fluid mt-5"
+                      alt="Cake chocolat"
+                    />
 
-                  <p>
-                    Dans un autre saladier, fouettez le beurre salé et le sucre jusqu'à ce que le mélange blanchisse.
-                    Ajoutez ensuite les oeufs, un à un, en continuant de fouetter. Ajoutez ensuite le mélange de farine,
-                    le lait et la vanille, et mélangez jusqu'à obtention d'une pâte homogène.
-                  </p>
-                  <p>Versez la pâte dans un moule à cake préalablement beurré et fariné, et enfournez pendant environ 30
-                    minutes. Vérifiez la cuisson en y plantant la lame d'un couteau, elle doit ressortir propre. Laissez
-                    refroidir avant de démouler et servir.</p>
-                  <img src="assets/img/recettes/cake-au-chocolat.webp" class="img-fluid mt-5" alt="Cake chocolat">
-
-                  <h3 class="mt-5">Bon appétit</h3>
-                  <p>
-                    Ce cake au chocolat est un véritable délice pour les amateurs de chocolat. Savoureux, moelleux et
-                    facile à réaliser, il fera le bonheur de tous les gourmands. N'hésitez pas à vous abonner à notre
-                    blog pour découvrir d'autres idées de gâteaux. Et pour une expérience culinaire encore plus
-                    immersive, n'oubliez pas de regarder notre <a href="https://www.youtube.com/watch?v=UR8l_MqqyLw"
-                      target="_blank">vidéo Youtube</a> pour réaliser ce délicieux cake au chocolat.
-                  </p>
-                  <!-- Réfléchir si je garde le lien vers la vidéo Youtube !!!!! -->
-                  <!-- <p>
+                    <h3 class="mt-5">Bon appétit</h3>
+                    <p>
+                      Ce cake au chocolat est un véritable délice pour les
+                      amateurs de chocolat. Savoureux, moelleux et facile à
+                      réaliser, il fera le bonheur de tous les gourmands.
+                      N'hésitez pas à vous abonner à notre blog pour découvrir
+                      d'autres idées de gâteaux. Et pour une expérience
+                      culinaire encore plus immersive, n'oubliez pas de regarder
+                      notre
+                      <a
+                        href="https://www.youtube.com/watch?v=UR8l_MqqyLw"
+                        target="_blank"
+                        >vidéo Youtube</a
+                      >
+                      pour réaliser ce délicieux cake au chocolat.
+                    </p>
+                    <!-- Réfléchir si je garde le lien vers la vidéo Youtube !!!!! -->
+                    <!-- <p>
                     Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
                   </p> -->
-
-                </div><!-- End post content -->
-
-                <div class="meta-bottom">
-                  <i class="bi bi-folder"></i>
-                  <ul class="cats">
-                    <li><a href="#">Business</a></li>
-                  </ul>
-
-                  <i class="bi bi-tags"></i>
-                  <ul class="tags">
-                    <li><a href="#">Creative</a></li>
-                    <li><a href="#">Tips</a></li>
-                    <li><a href="#">Marketing</a></li>
-                  </ul>
-                </div><!-- End meta bottom -->
-
-              </article>
-
-            </div>
-          </section><!-- /Blog Details Section -->
-
-          <!-- Blog Comments Section -->
-          <section id="blog-comments" class="blog-comments section">
-
-            <div class="container">
-
-              <h4 class="comments-count">8 Comments</h4>
-
-              <div id="comment-1" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-1.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Georgia Reader</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>
-                        Reply</a></h5>
-                    <time datetime="2020-01-01">01 Jan,2022</time>
-                    <p>
-                      Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis
-                      molestiae est qui cum soluta.
-                      Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
-                    </p>
                   </div>
-                </div>
-              </div><!-- End comment #1 -->
+                  <!-- End post content -->
 
-              <div id="comment-2" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-2.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Aron Alvarado</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>
-                        Reply</a></h5>
-                    <time datetime="2020-01-01">01 Jan,2022</time>
-                    <p>
-                      Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut
-                      beatae.
-                    </p>
-                  </div>
-                </div>
+                  <!-- <div class="meta-bottom">
+                    <i class="bi bi-folder"></i>
+                    <ul class="cats">
+                      <li><a href="#">Business</a></li>
+                    </ul>
 
-                <div id="comment-reply-1" class="comment comment-reply">
+                    <i class="bi bi-tags"></i>
+                    <ul class="tags">
+                      <li><a href="#">Creative</a></li>
+                      <li><a href="#">Tips</a></li>
+                      <li><a href="#">Marketing</a></li>
+                    </ul>
+                  </div> -->
+                  <!-- End meta bottom -->
+                </article>
+              </div>
+            </section>
+            <!-- /Blog Details Section -->
+
+            <!-- Blog Comments Section -->
+            <section id="blog-comments" class="blog-comments section">
+              <div class="container">
+                <h4 class="comments-count">8 Comments</h4>
+
+                <div id="comment-1" class="comment">
                   <div class="d-flex">
-                    <div class="comment-img"><img src="assets/img/blog/comments-3.jpg" alt=""></div>
+                    <div class="comment-img">
+                      <img src="assets/img/blog/comments-1.jpg" alt="" />
+                    </div>
                     <div>
-                      <h5><a href="">Lynda Small</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>
-                          Reply</a></h5>
+                      <h5>
+                        <a href="">Georgia Reader</a>
+                        <a href="#" class="reply"
+                          ><i class="bi bi-reply-fill"></i> Reply</a
+                        >
+                      </h5>
                       <time datetime="2020-01-01">01 Jan,2022</time>
                       <p>
-                        Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia
-                        mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat
-                        maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae.
+                        Et rerum totam nisi. Molestiae vel quam dolorum vel
+                        voluptatem et et. Est ad aut sapiente quis molestiae est
+                        qui cum soluta. Vero aut rerum vel. Rerum quos
+                        laboriosam placeat ex qui. Sint qui facilis et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End comment #1 -->
 
-                        Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui
-                        cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et
-                        illum. Expedita et dignissimos distinctio laborum minima fugiat.
-
-                        Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem
-                        quisquam vero rerum neque.
+                <div id="comment-2" class="comment">
+                  <div class="d-flex">
+                    <div class="comment-img">
+                      <img src="assets/img/blog/comments-2.jpg" alt="" />
+                    </div>
+                    <div>
+                      <h5>
+                        <a href="">Aron Alvarado</a>
+                        <a href="#" class="reply"
+                          ><i class="bi bi-reply-fill"></i> Reply</a
+                        >
+                      </h5>
+                      <time datetime="2020-01-01">01 Jan,2022</time>
+                      <p>
+                        Ipsam tempora sequi voluptatem quis sapiente non. Autem
+                        itaque eveniet saepe. Officiis illo ut beatae.
                       </p>
                     </div>
                   </div>
 
-                  <div id="comment-reply-2" class="comment comment-reply">
+                  <div id="comment-reply-1" class="comment comment-reply">
                     <div class="d-flex">
-                      <div class="comment-img"><img src="assets/img/blog/comments-4.jpg" alt=""></div>
+                      <div class="comment-img">
+                        <img src="assets/img/blog/comments-3.jpg" alt="" />
+                      </div>
                       <div>
-                        <h5><a href="">Sianna Ramsay</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>
-                            Reply</a></h5>
+                        <h5>
+                          <a href="">Lynda Small</a>
+                          <a href="#" class="reply"
+                            ><i class="bi bi-reply-fill"></i> Reply</a
+                          >
+                        </h5>
                         <time datetime="2020-01-01">01 Jan,2022</time>
                         <p>
-                          Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. Ut
-                          unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas
-                          repellat quisquam possimus. Perferendis id consectetur necessitatibus.
+                          Enim ipsa eum fugiat fuga repellat. Commodi quo quo
+                          dicta. Est ullam aspernatur ut vitae quia mollitia id
+                          non. Qui ad quas nostrum rerum sed necessitatibus aut
+                          est. Eum officiis sed repellat maxime vero nisi natus.
+                          Amet nesciunt nesciunt qui illum omnis est et dolor
+                          recusandae. Recusandae sit ad aut impedit et. Ipsa
+                          labore dolor impedit et natus in porro aut. Magnam qui
+                          cum. Illo similique occaecati nihil modi eligendi.
+                          Pariatur distinctio labore omnis incidunt et illum.
+                          Expedita et dignissimos distinctio laborum minima
+                          fugiat. Libero corporis qui. Nam illo odio beatae enim
+                          ducimus. Harum reiciendis error dolorum non autem
+                          quisquam vero rerum neque.
                         </p>
                       </div>
                     </div>
 
-                  </div><!-- End comment reply #2-->
+                    <div id="comment-reply-2" class="comment comment-reply">
+                      <div class="d-flex">
+                        <div class="comment-img">
+                          <img src="assets/img/blog/comments-4.jpg" alt="" />
+                        </div>
+                        <div>
+                          <h5>
+                            <a href="">Sianna Ramsay</a>
+                            <a href="#" class="reply"
+                              ><i class="bi bi-reply-fill"></i> Reply</a
+                            >
+                          </h5>
+                          <time datetime="2020-01-01">01 Jan,2022</time>
+                          <p>
+                            Et dignissimos impedit nulla et quo distinctio ex
+                            nemo. Omnis quia dolores cupiditate et. Ut unde qui
+                            eligendi sapiente omnis ullam. Placeat porro est
+                            commodi est officiis voluptas repellat quisquam
+                            possimus. Perferendis id consectetur necessitatibus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End comment reply #2-->
+                  </div>
+                  <!-- End comment reply #1-->
+                </div>
+                <!-- End comment #2-->
 
-                </div><!-- End comment reply #1-->
-
-              </div><!-- End comment #2-->
-
-              <div id="comment-3" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-5.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Nolan Davidson</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i>
-                        Reply</a></h5>
-                    <time datetime="2020-01-01">01 Jan,2022</time>
-                    <p>
-                      Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium
-                      tempore. Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est
-                      accusamus iste at.
-                      Non aut et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur
-                      officia beatae ea aut eos soluta. Non qui dolorum voluptatibus et optio veniam. Quam officia sit
-                      nostrum dolorem.
-                    </p>
+                <div id="comment-3" class="comment">
+                  <div class="d-flex">
+                    <div class="comment-img">
+                      <img src="assets/img/blog/comments-5.jpg" alt="" />
+                    </div>
+                    <div>
+                      <h5>
+                        <a href="">Nolan Davidson</a>
+                        <a href="#" class="reply"
+                          ><i class="bi bi-reply-fill"></i> Reply</a
+                        >
+                      </h5>
+                      <time datetime="2020-01-01">01 Jan,2022</time>
+                      <p>
+                        Distinctio nesciunt rerum reprehenderit sed. Iste omnis
+                        eius repellendus quia nihil ut accusantium tempore.
+                        Nesciunt expedita id dolor exercitationem aspernatur aut
+                        quam ut. Voluptatem est accusamus iste at. Non aut et et
+                        esse qui sit modi neque. Exercitationem et eos
+                        aspernatur. Ea est consequuntur officia beatae ea aut
+                        eos soluta. Non qui dolorum voluptatibus et optio
+                        veniam. Quam officia sit nostrum dolorem.
+                      </p>
+                    </div>
                   </div>
                 </div>
+                <!-- End comment #3 -->
 
-              </div><!-- End comment #3 -->
-
-              <div id="comment-4" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Kay Duggan</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a>
-                    </h5>
-                    <time datetime="2020-01-01">01 Jan,2022</time>
-                    <p>
-                      Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. Cumque sed
-                      quia ut maxime. Est ad aut cum. Ut exercitationem non in fugiat.
-                    </p>
+                <div id="comment-4" class="comment">
+                  <div class="d-flex">
+                    <div class="comment-img">
+                      <img src="assets/img/blog/comments-6.jpg" alt="" />
+                    </div>
+                    <div>
+                      <h5>
+                        <a href="">Kay Duggan</a>
+                        <a href="#" class="reply"
+                          ><i class="bi bi-reply-fill"></i> Reply</a
+                        >
+                      </h5>
+                      <time datetime="2020-01-01">01 Jan,2022</time>
+                      <p>
+                        Dolorem atque aut. Omnis doloremque blanditiis quia eum
+                        porro quis ut velit tempore. Cumque sed quia ut maxime.
+                        Est ad aut cum. Ut exercitationem non in fugiat.
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-              </div><!-- End comment #4 -->
-
-            </div>
-
-          </section><!-- /Blog Comments Section -->
-
-          <!-- Comment Form Section -->
-          <section id="comment-form" class="comment-form section">
-            <div class="container">
-
-              <form action="">
-
-                <h4>Post Comment</h4>
-                <p>Your email address will not be published. Required fields are marked * </p>
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input name="name" type="text" class="form-control" placeholder="Your Name*">
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <input name="email" type="text" class="form-control" placeholder="Your Email*">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col form-group">
-                    <input name="website" type="text" class="form-control" placeholder="Your Website">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col form-group">
-                    <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
-                  </div>
-                </div>
-
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Post Comment</button>
-                </div>
-
-              </form>
-
-            </div>
-          </section><!-- /Comment Form Section -->
-
-        </div>
-
-        <div class="col-lg-4 sidebar">
-
-          <div class="widgets-container">
-
-            <!-- Blog Author Widget -->
-            <div class="blog-author-widget widget-item">
-
-              <div class="d-flex flex-column align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" class="rounded-circle flex-shrink-0" alt="">
-                <h4>Jane Smith</h4>
-                <div class="social-links">
-                  <a href="https://x.com/#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
-                  <a href="https://instagram.com/#"><i class="biu bi-linkedin"></i></a>
-                </div>
-
-                <p>
-                  Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat
-                  voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
-                </p>
-
+                <!-- End comment #4 -->
               </div>
-            </div><!--/Blog Author Widget -->
+            </section>
+            <!-- /Blog Comments Section -->
 
-            <!-- Search Widget -->
-            <!-- <div class="search-widget widget-item">
+            <!-- Comment Form Section -->
+            <section id="comment-form" class="comment-form section">
+              <div class="container">
+                <form action="">
+                  <h4>Post Comment</h4>
+                  <p>
+                    Your email address will not be published. Required fields
+                    are marked *
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Name*"
+                      />
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input
+                        name="email"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Email*"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col form-group">
+                      <input
+                        name="website"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Website"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col form-group">
+                      <textarea
+                        name="comment"
+                        class="form-control"
+                        placeholder="Your Comment*"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                      Post Comment
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <!-- /Comment Form Section -->
+          </div>
+
+          <div class="col-lg-4 sidebar">
+            <div class="widgets-container">
+              Blog Author Widget
+              <div class="blog-author-widget widget-item">
+                <div class="d-flex flex-column align-items-center">
+                  <img
+                    src="assets/img/blog/blog-author.jpg"
+                    class="rounded-circle flex-shrink-0"
+                    alt=""
+                  />
+                  <h4>Jane Smith</h4>
+                  <div class="social-links">
+                    <a href="https://x.com/#"
+                      ><i class="bi bi-twitter-x"></i
+                    ></a>
+                    <a href="https://facebook.com/#"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                    <a href="https://instagram.com/#"
+                      ><i class="biu bi-instagram"></i
+                    ></a>
+                    <a href="https://instagram.com/#"
+                      ><i class="biu bi-linkedin"></i
+                    ></a>
+                  </div>
+
+                  <p>
+                    Itaque quidem optio quia voluptatibus dolorem dolor. Modi
+                    eum sed possimus accusantium. Quas repellat voluptatem
+                    officia numquam sint aspernatur voluptas. Esse et
+                    accusantium ut unde voluptas.
+                  </p>
+                </div>
+              </div>
+              <!--/Blog Author Widget -->
+
+              <!-- Search Widget -->
+              <!-- <div class="search-widget widget-item">
 
               <h3 class="widget-title">Search</h3>
               <form action="">
@@ -405,174 +532,218 @@
               </form>
 
             </div> -->
-            <!--/Search Widget -->
+              <!--/Search Widget -->
 
-            <!-- Recent Posts Widget -->
-            <div class="recent-posts-widget widget-item">
+              <!-- Recent Posts Widget -->
+              <div class="recent-posts-widget widget-item">
+                <h3 class="widget-title">Recent Posts</h3>
 
-              <h3 class="widget-title">Recent Posts</h3>
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Titre de l'article</a></h4>
-                  <time datetime="2020-01-01">Fev 24, 2025</time>
+                <div class="post-item">
+                  <img
+                    src="assets/img/blog/blog-recent-1.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4><a href="blog-details.html">Titre de l'article</a></h4>
+                    <time datetime="2020-01-01">Fev 24, 2025</time>
+                  </div>
                 </div>
-              </div><!-- End recent post item-->
+                <!-- End recent post item-->
 
-              <div class="post-item">
-                <img src="assets/img/recettes/chocolat.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details-V2.html">Cake au chocolat : une recette irrésistible pour les amateurs de
-                      chocolat</a></h4>
-                  <time datetime="2025-02-16">Fev 16, 2025</time>
+                <div class="post-item">
+                  <img
+                    src="assets/img/recettes/chocolat.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details-V2.html"
+                        >Cake au chocolat : une recette irrésistible pour les
+                        amateurs de chocolat</a
+                      >
+                    </h4>
+                    <time datetime="2025-02-16">Fev 16, 2025</time>
+                  </div>
                 </div>
-              </div><!-- End recent post item-->
+                <!-- End recent post item-->
 
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-3.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                <div class="post-item">
+                  <img
+                    src="assets/img/blog/blog-recent-3.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details.html"
+                        >Id quia et et ut maxime similique occaecati ut</a
+                      >
+                    </h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
                 </div>
-              </div><!-- End recent post item-->
+                <!-- End recent post item-->
 
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-4.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                <div class="post-item">
+                  <img
+                    src="assets/img/blog/blog-recent-4.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details.html"
+                        >Laborum corporis quo dara net para</a
+                      >
+                    </h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
                 </div>
-              </div><!-- End recent post item-->
+                <!-- End recent post item-->
 
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                <div class="post-item">
+                  <img
+                    src="assets/img/blog/blog-recent-5.jpg"
+                    alt=""
+                    class="flex-shrink-0"
+                  />
+                  <div>
+                    <h4>
+                      <a href="blog-details.html"
+                        >Et dolores corrupti quae illo quod dolor</a
+                      >
+                    </h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                  </div>
                 </div>
-              </div><!-- End recent post item-->
+                <!-- End recent post item-->
+              </div>
+              <!--/Recent Posts Widget -->
 
-            </div><!--/Recent Posts Widget -->
-
-            <!-- Tags Widget -->
-            <!-- Tags récupéré depuis le blog
+              <!-- Tags Widget -->
+              <!-- Tags récupéré depuis le blog
             Tagué cake, cake chocolat, chocolat, cuisine thailandaise, dessert, dessert asiatique, dessert thailandais, gateau,
             gâteau, recette, recette asiatique, recette du jour, recette Thaïlandaise, recettes, recipe, recipe asian food, recipe
             cake, recipe thai, Thaïlande -->
-            <!-- Voir le fonctionnement sur le blog, voir si je peux reproduire la même chose -->
-            <div class="tags-widget widget-item">
-
-              <h3 class="widget-title">Tags</h3>
-              <ul>
-                <li><a href="#">cake</a></li>
-                <li><a href="#">cake chocolat</a></li>
-                <li><a href="#">chocolat</a></li>
-                <li><a href="#">dessert</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Smart</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Marketing</a></li>
-              </ul>
-
-            </div><!--/Tags Widget -->
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Tempo</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+              <!-- Voir le fonctionnement sur le blog, voir si je peux reproduire la même chose -->
+              <div class="tags-widget widget-item">
+                <h3 class="widget-title">Tags</h3>
+                <ul>
+                  <li><a href="#">cake</a></li>
+                  <li><a href="#">cake chocolat</a></li>
+                  <li><a href="#">chocolat</a></li>
+                  <li><a href="#">dessert</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Studio</a></li>
+                  <li><a href="#">Smart</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </div>
+              <!--/Tags Widget -->
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
-        </div>
-
       </div>
-    </div>
+    </main>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Tempo</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Tempo</span>
+            </a>
+            <p>
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p>United States</p>
+            <p class="mt-4">
+              <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+            </p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
       </div>
-    </div>
 
-  </footer>
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span> <strong class="px-1 sitename">Tempo</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
